@@ -21,10 +21,17 @@ WHERE m.Mark = (
 			   );
                
 -- 3. Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần.
-SELECT * FROM Student s 
-JOIN Mark m 
-ON s. MarkId = m.MarkId
--- SELECT AVG(Mark) FROM Mark;
+SELECT s.*, IFNULL(AVG(Mark), 0) AS AVG_Mark FROM Student s
+LEFT JOIN Mark m 
+ON s.StudentId = m.StudentId
+GROUP BY s.StudentId
+ORDER BY AVG_Mark DESC;
+
+
+
+
+
+
                
                
 
