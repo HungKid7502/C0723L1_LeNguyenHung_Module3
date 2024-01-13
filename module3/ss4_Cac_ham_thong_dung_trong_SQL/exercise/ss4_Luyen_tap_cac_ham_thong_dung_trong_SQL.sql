@@ -26,13 +26,3 @@ LEFT JOIN Mark m
 ON s.StudentId = m.StudentId
 GROUP BY s.StudentId
 ORDER BY AVG_Mark DESC;
-
-
-
-
-
-
-               
-               
-
-
