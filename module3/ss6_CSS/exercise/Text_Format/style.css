@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.content {
+    text-indent: 5%;
+}
+
+/* thụt lề */
+
+.name-bold {
+    font-weight: bold;
+}
+
+/* in đậm */
+
+.name-aqua {
+    color: #0099CC;
+}
+
+a {
+    color: #0B0080;
+}
+
+#sup1 {
+    font-size: xx-small;
+    color: #0B0080;
+}
+
+#sup2 {
+    font-size: xx-small;
+    margin-left: 1px;
+}
